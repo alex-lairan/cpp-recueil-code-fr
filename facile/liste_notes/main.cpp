@@ -19,7 +19,7 @@ int main() {
       double mark; // Variable déclaré juste quand nécéssaire
       std::cin >> mark; // Récupère une saisie
 
-      if(mark > -1.01 && mark < 0.09) { break; } // Si la note est -1
+      if(mark > -1.01 && mark < -0.99) { break; } // Si la note est -1
 
       // Ici, nous voulons une note entre 0 et 20
       if(!(mark >= 0 && mark <= 20)) {

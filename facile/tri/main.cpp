@@ -13,9 +13,12 @@
 template<typename T>
 void display_vector(const std::vector<T>& vector) {
   std::cout << "Vector[" << std::endl;
-  for(auto& element : vector) {
+
+  // const auto& évite la copie, aisni que la modification de l'élement
+  for(const auto& element : vector) {
     std::cout << '\t' << element << ", " << std::endl;
   }
+
   std::cout << "]" << std::endl;
 }
 

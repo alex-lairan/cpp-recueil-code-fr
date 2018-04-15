@@ -8,8 +8,8 @@
 #include <string> // std::string
 
 int main() {
-  constexpr char filename[] { "test" }; // Changer le nom du fichier ici
-  std::ifstream file(filename); // Fichier
+  const std::string filename { "test" }; // Changer le nom du fichier ici
+  std::ifstream file { filename }; // Fichier
 
   std::string line;
   unsigned int count { 0 }; // Nombre de lignes

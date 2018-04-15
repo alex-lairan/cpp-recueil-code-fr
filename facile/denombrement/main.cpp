@@ -1,6 +1,6 @@
 /*
  * nom: Dénombrement
- * énoncé: Lire un fichier et compter le nombre de ligne
+ * énoncé: Lire un fichier et compter le nombre de lignes
  * but: Lecture de fichier
  */
 #include <iostream> // std::cout
@@ -8,7 +8,7 @@
 #include <string> // std::string
 
 int main() {
-  constexpr char filename[] { "test" }; // Changer le nom du fichier
+  constexpr char filename[] { "test" }; // Changer le nom du fichier ici
   std::ifstream file(filename); // Fichier
 
   std::string line;

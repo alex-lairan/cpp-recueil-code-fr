@@ -10,13 +10,12 @@
 int main() {
   const std::string filename { "test" }; // Changer le nom du fichier ici
   std::ifstream file { filename }; // Fichier
-
-  std::string line;
   unsigned int count { 0 }; // Nombre de lignes
+  std::string line;
 
   // std::getline permet de récupérer une ligne du fichier
   while(std::getline(file, line)) {
-      count++;
+      ++count;
   }
 
   std::cout << "Dans le fichier " << filename

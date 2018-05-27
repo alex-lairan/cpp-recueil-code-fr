@@ -3,7 +3,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 set(CMAKE_CXX_STANDARD 14)
 cmake_minimum_required(VERSION 3.2)
 
-project(Denombrement)
+project(SharedPtr)
 
-
-add_executable(denombrement main.cpp)
+add_executable(shared_ptr main.cpp shared_array.cpp)
